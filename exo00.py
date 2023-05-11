@@ -32,5 +32,6 @@ def possible_combinations():
 			for k in range(0, 10):
 				if i < j and j < k:
 					combinations.append(str(i) + str(j) + str(k))
-	print(combinations)
+	result = ", ".join(combinations)
+	print(result)
 possible_combinations()
