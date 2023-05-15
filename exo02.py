@@ -29,7 +29,7 @@ if len(sys.argv) < 2:
 	sys.exit
 #definir une nouvelle liste sans le nom du script
 args = sys.argv[1:]
-
+#définir une nouvelle liste en utilisant la fonction de reverse
 args_reversed = reverse_arguments(args)
 
 for n in args_reversed:
