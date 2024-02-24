@@ -20,7 +20,7 @@ def combination_of_numbers():
     for number_a in range(0, 100):
         for number_b in range(number_a+1, 100):
             if number_b > number_a:
-                #gérer le 0 devant, séparer les deux nombres, mettre 0 devant puis les concatener
+                #mettre 0 devant puis les concatener
                 combination_list.append("{:02d} {:02d}".format(number_a, number_b))
 
     result = ", ".join(combination_list)
