@@ -10,19 +10,17 @@ $> python exo.py
 $>
 '''
 
-#créer deux boucles de 0 à 99
-#quand la deuxième boucle atteint son max, itérer la première
-#puis relancer la deuxième
-#print unique si la deuxième liste > première liste
+#créer une liste vide
+#créer deux boucle jusque 100 dont l'une supérieur de 1 à la première
+#ajouter chaque itération à la liste vide
+#ajouter un 0 pour avoir des nombres au format 00
 
 def combination_of_numbers():
-    combination_list = []
-    for number_a in range(0, 100):
-        for number_b in range(number_a+1, 100):
-            if number_b > number_a:
-                #mettre 0 devant puis les concatener
-                combination_list.append("{:02d} {:02d}".format(number_a, number_b))
+	combination_list = []
+	for number_a in range(0, 100):
+		for number_b in range(number_a+1, 100):
+			combination_list.append("{:02d} {:02d}".format(number_a, number_b))
 
-    result = ", ".join(combination_list)
-    return result
+	result = ", ".join(combination_list)
+	return result
 print(combination_of_numbers())
